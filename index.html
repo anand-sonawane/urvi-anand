@@ -553,7 +553,7 @@ footer span{color:var(--ink-soft)}
           <li><b>Antarpat</b><span>A silk cloth is held between us while the mangalashtak verses are sung.</span></li>
           <li><b>12:54, the muhurat</b><span>The cloth comes down, we see each other, and the garlands go on.</span></li>
         </ul>
-        <div class="aside"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><ellipse cx="8" cy="9" rx="1.6" ry="2.6" transform="rotate(-25 8 9)"/><ellipse cx="14" cy="7" rx="1.6" ry="2.6" transform="rotate(20 14 7)"/><ellipse cx="12" cy="14" rx="1.6" ry="2.6"/><ellipse cx="17" cy="15" rx="1.6" ry="2.6" transform="rotate(35 17 15)"/></svg><span><b>Keep your akshata ready.</b> You'll be handed a few grains of rice. Shower them on us at every "Shubh mangal saavdhan".</span></div>
+        <div class="aside"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="2.2"/><path d="M12 9.8c-1.6-2.6-1-5.3 0-6.3 1 1 1.6 3.7 0 6.3zM12 14.2c1.6 2.6 1 5.3 0 6.3-1-1-1.6-3.7 0-6.3zM9.8 12c-2.6 1.6-5.3 1-6.3 0 1-1 3.7-1.6 6.3 0zM14.2 12c2.6-1.6 5.3-1 6.3 0-1 1-3.7 1.6-6.3 0z"/></svg><span><b>Keep your petals ready.</b> You'll be handed a handful of flower petals. Shower them on us at every "Shubh mangal saavdhan".</span></div>
         <button class="xbtn" id="xbtn" type="button">Exchange the garlands</button>
       </div>
       <div class="stage">
@@ -808,7 +808,7 @@ footer span{color:var(--ink-soft)}
       [gU, gA].forEach(function(g){ g.classList.remove('swayA', 'swayB'); });
       var a1 = gU.parentNode.animate(kU, opt); gA.parentNode.animate(kA, opt);
       a1.onfinish = function(){ busy = false; swapped = !swapped;
-        if (swapped){ var r = vm.getBoundingClientRect(), sr = sec.getBoundingClientRect(); var cy = r.top - sr.top + r.height * .45; burst(box, r.left - sr.left + r.width * .25, cy, 'rp', 9); burst(box, r.left - sr.left + r.width * .75, cy, 'rp', 9); burst(box, r.left - sr.left + r.width * .5, cy - 40, 'ak', 16);
+        if (swapped){ var r = vm.getBoundingClientRect(), sr = sec.getBoundingClientRect(); var cy = r.top - sr.top + r.height * .45; burst(box, r.left - sr.left + r.width * .25, cy, 'rp', 9); burst(box, r.left - sr.left + r.width * .75, cy, 'rp', 9); burst(box, r.left - sr.left + r.width * .5, cy - 40, 'mp', 12);
           play('chime'); shubh.textContent = 'Shubh mangal saavdhan!'; shubh.classList.add('on'); xbtn.textContent = 'Swap them back'; }
         else { shubh.classList.remove('on'); xbtn.textContent = 'Exchange the garlands'; gU.classList.add('swayA'); gA.classList.add('swayB'); } };
     }
